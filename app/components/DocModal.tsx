@@ -56,7 +56,7 @@ export default function DocModal({
         {/* Header rule */}
         <div style={{ borderTop: "3px solid #1a0f00", borderBottom: "3px double #1a0f00", padding: "5px 0", marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "9px", letterSpacing: "0.3em", color: "#1a0f00" }}>
-            OFFICIAL DOCUMENT · {portfolioData.caseNumber}
+            OFFICIAL DOCUMENT · {portfolioData.caseNumber as string}
           </span>
           <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "9px", letterSpacing: "0.2em", color: "#8b1a1a" }}>
             {section.stampText}
