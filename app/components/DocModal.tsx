@@ -56,16 +56,16 @@ export default function DocModal({
         {/* Header rule */}
         <div style={{ borderTop: "3px solid #1a0f00", borderBottom: "3px double #1a0f00", padding: "5px 0", marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "9px", letterSpacing: "0.3em", color: "#1a0f00" }}>
-            OFFICIAL DOCUMENT · {portfolioData.caseNumber as string}
+            OFFICIAL DOCUMENT · {String(portfolioData.caseNumber)}
           </span>
           <span style={{ fontFamily: "'Special Elite', cursive", fontSize: "9px", letterSpacing: "0.2em", color: "#8b1a1a" }}>
-            {section.stampText}
+            {String(section.stampText)}
           </span>
         </div>
 
         {/* Icon + title */}
         <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "20px" }}>
-          <span style={{ fontSize: "40px" }}>{section.icon}</span>
+          <span style={{ fontSize: "40px" }}>{String(section.icon)}</span>
           <div>
             <h2 style={{ fontFamily: "'Oswald', sans-serif", fontWeight: 700, fontSize: "28px", color: "#1a0f00", letterSpacing: "0.05em" }}>
               {content.heading as string}
@@ -162,7 +162,7 @@ export default function DocModal({
             PRESS ESC OR CLICK OUTSIDE TO CLOSE
           </span>
           <span style={{ fontFamily: "'Courier Prime', monospace", fontSize: "9px", color: "#5a3e1b" }}>
-            {portfolioData.name} · {portfolioData.location}
+            {String(portfolioData.name)} · {String(portfolioData.location)}
           </span>
         </div>
       </div>
